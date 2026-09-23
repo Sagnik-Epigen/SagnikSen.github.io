@@ -48,8 +48,8 @@ to 16 CPUs / 32 GB RAM by default (see [Resources](#resources)).
 ## Installation
 
 ```bash
-git clone https://github.com/Sagnik-Epigen/needseq-pipeline.git
-cd needseq-pipeline
+git clone https://github.com/Sagnik-Epigen/NEEDseq_Pipeline.git
+cd NEEDseq_Pipeline
 ```
 
 Pick **one** of the following.
