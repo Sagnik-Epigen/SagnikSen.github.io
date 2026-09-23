@@ -48,7 +48,7 @@ to 16 CPUs / 32 GB RAM by default (see [Resources](#resources)).
 ## Installation
 
 ```bash
-git clone <this-repo-url> needseq-pipeline
+git clone https://github.com/Sagnik-Epigen/needseq-pipeline.git
 cd needseq-pipeline
 ```
 
@@ -188,3 +188,7 @@ results/
   (results are published to `--outdir`).
 - Bowtie2 output is piped straight into `samtools sort` (no intermediate SAM).
 - Unknown species now stop the run with an error instead of silently producing empty files.
+
+## License
+
+Released under the [MIT License](LICENSE). © 2026 Sagnik Sen
