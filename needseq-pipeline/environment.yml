@@ -1,0 +1,20 @@
+# Conda environment with every tool the NEEDseq pipeline needs.
+#   conda env create -f environment.yml   (or: mamba env create -f environment.yml)
+#   conda activate needseq
+name: needseq
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - nextflow>=24.04
+  - trim-galore>=0.6.10
+  - cutadapt>=4.4
+  - fastqc>=0.12
+  - bowtie2>=2.5
+  - samtools>=1.17
+  - picard>=3.0
+  - macs3>=3.0
+  - deeptools>=3.5.4
+  - multiqc>=1.21
+  - pigz
+  - curl

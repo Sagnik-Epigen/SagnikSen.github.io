@@ -171,6 +171,7 @@ include:
   - _pages
   - files
 exclude:
+  - needseq-pipeline
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

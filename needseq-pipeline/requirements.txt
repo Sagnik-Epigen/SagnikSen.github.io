@@ -1,0 +1,9 @@
+# Python tools used by the NEEDseq pipeline (pip install -r requirements.txt).
+# Non-Python tools are NOT installable with pip - get them from conda/bioconda (see environment.yml)
+# or your system package manager:
+#   Nextflow >= 24.04 (needs Java 17+), Trim Galore >= 0.6.10, FastQC >= 0.12,
+#   Bowtie2 >= 2.5, samtools >= 1.17, Picard >= 3.0
+cutadapt>=4.4
+macs3>=3.0
+deeptools>=3.5.4
+multiqc>=1.21

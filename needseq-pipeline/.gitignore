@@ -1,0 +1,6 @@
+work/
+results/
+genomes/
+.nextflow/
+.nextflow.log*
+*.pyc
