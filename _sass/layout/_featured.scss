@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Featured publications (home page)
+   ========================================================================== */
+
+.featured-pubs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 1em 0 2em;
+}
+
+.featured-pub {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 1.25em;
+  align-items: start;
+  padding: 1em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  background-color: var(--global-bg-color);
+
+  @media (max-width: $medium) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.featured-pub__figure {
+  display: block;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+  }
+}
+
+.featured-pub__venue {
+  margin: 0 0 0.25em;
+  font-size: $type-size-6;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--global-text-color-light);
+}
+
+.featured-pub__title {
+  margin: 0 0 0.5em;
+  font-size: $type-size-5;
+  line-height: 1.3;
+}
+
+.featured-pub__summary p {
+  margin: 0 0 0.5em;
+  font-size: $type-size-6;
+}
+
+.featured-pub__links {
+  margin: 0;
+  font-size: $type-size-6;
+  font-weight: bold;
+}

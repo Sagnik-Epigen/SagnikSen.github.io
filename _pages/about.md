@@ -13,6 +13,10 @@ My research focuses on creating new approaches to interrogate chromatin alterati
 
 Working seamlessly across experimental and computational disciplines, I am building an independent research program focused on **chromatin reorganization during cell maturation**. I am passionate about interdisciplinary collaboration and committed to mentoring and supporting junior scientists.
 
+Featured research
+======
+{% include featured-publications.html %}
+
 Career highlights
 ======
 - **10+ years** of experience as a bioinformatics researcher, working at the confluence of computer science and biology

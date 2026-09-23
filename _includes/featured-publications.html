@@ -1,0 +1,19 @@
+{% include base_path %}
+{% assign featured = site.publications | where: "featured", true | sort: "featured_order" %}
+<div class="featured-pubs">
+{% for post in featured %}
+  <article class="featured-pub">
+    <a class="featured-pub__figure" href="{{ base_path }}{{ post.url }}">
+      <img src="{{ base_path }}/images/{{ post.header.teaser }}" alt="Graphical abstract: {{ post.title | strip_html }}" loading="lazy">
+    </a>
+    <div class="featured-pub__body">
+      <p class="featured-pub__venue">{{ post.venue }} · {{ post.date | date: "%Y" }}{% if post.category == "review" %} · under review{% elsif post.category == "preprints" %} · preprint{% endif %}</p>
+      <h3 class="featured-pub__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="featured-pub__summary">{{ post.summary | markdownify }}</div>
+      <p class="featured-pub__links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a> · {% endif %}<a href="{{ base_path }}{{ post.url }}">Graphical abstract</a>
+      </p>
+    </div>
+  </article>
+{% endfor %}
+</div>
